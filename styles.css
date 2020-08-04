@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    background-color: #c0c0c0;
+    opacity: 0.7;
+    position: fixed;
+    z-index: 10;
+}
+
+.head-container {
+    margin: 10px 0 10px 0;
+}
+
+.head-container a {
+    padding: 0 24px 0 24px;
+    font-size: 20px;
+    color: #fffafa;
+    text-decoration: none;
+}
+
+.top-wrapper {
+   background-image: url(https://beiz.jp/images_P/black/black_00014.jpg);
+   background-size: cover;
+}
+
+.title { 
+    padding: 120px 0 70px 0;
+    font-family: serif;
+}
+
+.title h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 50px;
+    border-bottom: solid 1px;
+    margin-bottom: 1px;
+
+}
+
+.title h2 {
+    text-align: center;
+    font-size: 35px;
+    margin: 3px 0 30px 0;
+
+}
+
+section {
+    margin-bottom: 75px;
+}
+
+h2 {
+    font-size: 35px;
+    margin: 20px 0 20px 0;
+}
+
+
+
+.prf-container h3 {
+    margin: 40px 0 0 0;
+    font-size: 28px;
+    font-family: serif;
+}
+
+.prf-container h4 {
+    margin: 0 0 40px 0;
+    font-size: 15px;
+    font-family: serif;
+}
+
+.prf-container p {
+    font-size: 15px;
+}
+
+
+.works p {
+    margin: 16px 0 16px 0;
+    font-size: 15px;
+}
+
+.works span {
+    font-size: 20px;
+}
+
+
+.contact a {
+    margin: 0 10px 0 10px;
+}
+
+
+.fa-facebook-square {
+    color: #3b5998;
+}
+
+.fa-instagram {
+    color: #CF2E92;
+}
+
+footer {
+    padding: 28px 0;
+    background-color: #c0c0c0;
+    font-size: 14px
+}
