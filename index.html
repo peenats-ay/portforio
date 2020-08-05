@@ -5,7 +5,19 @@
     <title>野間口健尚 ポートフォリオサイト</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script>
+        $(function(){
+          $('a[href^="#"]').click(function() {
+            var speed = 500;
+            var href= $(this).attr("href");
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            var position = target.offset().top;
+            $('body,html').animate({scrollTop:position}, speed, 'swing');
+            return false;
+          });
+        });
+      </script>
 </head>
 <body>
     <header>
@@ -50,10 +62,21 @@
     </section>
     <section class="works" id="wks">
         <h2><i class="fas fa-headphones-alt"></i>Works</h2>
+        <p><span>2017年薩摩川内市クリスマステーマソング「illuminate」(2017)</span><br>
+            ストリングス：カルテット「chouchou」
+        </p>
             <audio id="playSong" src="クリスマステーマソング.wav" controls></audio>
-                <p><span>フルート独奏のための奇想曲(2017)</span><br>
-                フルート：細川 杏子
-                </p>
+        <p><span>フルート独奏のための奇想曲(2017)</span><br>
+            フルート：細川 杏子
+        </p>
+            <audio id="playSong" src="09 Capriccio.m4a" controls></audio>
+        <p><span>アルトサクソフォンとピアノのための3つの詩曲(2019)</span><br>
+            サクソフォン：近藤 那未<br>
+            ピアノ：金原 あかり
+        </p>
+            <audio id="playSong" src="03 野間口.m4a" controls></audio>
+        
+
     </section>
     <section class="contact" id="cont">
         <h2><i class="far fa-paper-plane"></i>Contact</h2>
