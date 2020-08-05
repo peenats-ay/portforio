@@ -5,7 +5,19 @@
     <title>野間口健尚 ポートフォリオサイト</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+          $('a[href^="#"]').click(function() {
+            var speed = 500;
+            var href= $(this).attr("href");
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            var position = target.offset().top;
+            $('body,html').animate({scrollTop:position}, speed, 'swing');
+            return false;
+          });
+        });
+      </script>
 </head>
 <body>
     <header>
@@ -74,20 +86,6 @@
     <footer>
         (c) Kensho Nomaguchi
     </footer>
-
-    <script src="js/main.js">        
-    </script>
-    <script type="text/javascript">
-        $(function(){
-          $('a[href^="#"]').click(function() {
-            var speed = 500;
-            var href= $(this).attr("href");
-            var target = $(href == "#" || href == "" ? 'html' : href);
-            var position = target.offset().top;
-            $('body,html').animate({scrollTop:position}, speed, 'swing');
-            return false;
-          });
-        });
-      </script>
+    
 </body>
 </html>
