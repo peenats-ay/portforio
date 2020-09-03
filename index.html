@@ -1,22 +1,10 @@
-<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="utf-8">
     <title>野間口健尚 ポートフォリオサイト</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js">
-        $(function(){
-          $('a[href^="#"]').click(function() {
-            var speed = 500;
-            var href= $(this).attr("href");
-            var target = $(href == "#" || href == "" ? 'html' : href);
-            var position = target.offset().top;
-            $('body,html').animate({scrollTop:position}, speed, 'swing');
-            return false;
-          });
-        });
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -24,7 +12,7 @@
             <a href="#tp" class="btn">Top</a>
             <a href="#prf" class="btn">Profile</a>
             <a href="#wks" class="btn">Works</a>
-            <a href="#cont" class="btn">Contact</a>
+            <a href="#cnt" class="btn">Contact</a>
         </div>
     </header>
     <section class="top-wrapper" id="tp">
@@ -77,14 +65,14 @@
         
 
     </section>
-    <section class="contact" id="cont">
+    <section class="contact" id="cnt">
         <h2><i class="far fa-paper-plane"></i>Contact</h2>
-        <a href="https://www.facebook.com/profile.php?id=100018605452034" target=”_blank”><i class="fab fa-facebook-square fa-4x"></i></a>
-        <a href="https://www.instagram.com/peenats_ay/?hl=ja" target=”_blank”><i class="fab fa-instagram fa-4x"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100018605452034" target=”_blank” class="contact-icon"><i class="fab fa-facebook-square fa-4x"></i></a>
+        <a href="https://www.instagram.com/peenats_ay/?hl=ja" target=”_blank” class="contact-icon"><i class="fab fa-instagram fa-4x"></i></a>
     </section>
     <footer>
         (c) Kensho Nomaguchi
     </footer>
-    
+    <script src="main.js"></script>
 </body>
 </html>
