@@ -93,13 +93,20 @@ h2 {
     margin: 0 10px 0 10px;
 }
 
+.contact-icon {
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+}
 
 .fa-facebook-square {
     color: #3b5998;
+    size: 40px;
 }
 
 .fa-instagram {
     color: #CF2E92;
+    font-size: 40px;
 }
 
 footer {
