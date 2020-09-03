@@ -88,6 +88,43 @@ h2 {
     font-size: 20px;
 }
 
+ul {
+    list-style: none;
+}
+
+.songs {
+    padding: 0;
+  }
+  
+.song {
+    display: none;
+  }
+  
+.active {
+    display: block;
+  }
+
+.index-btn-wrapper {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .index-btn {
+    display: inline-block;
+    color: #696969;
+    background-color: #f5f5f5;
+    width: 30px;
+    padding: 3px 0;
+    margin: 0 5px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  .index-btn:hover {
+    color: #fff;
+    background-color: #808080;
+  }
+
 
 .contact a {
     margin: 0 10px 0 10px;
